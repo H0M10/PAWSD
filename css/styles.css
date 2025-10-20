@@ -302,9 +302,43 @@ body {
     justify-content: space-between;
     gap: 30px;
 }
-.footer-about, .footer-contact, .footer-resources, .footer-news {
+.footer-about, .footer-contact, .footer-imagenes .footer-news {
     flex: 1 1 200px;
     margin-bottom: 20px;
+}
+/* .footer-contact ul{
+    text-align: right;
+} */
+/* .footer-imagenes{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    /* align-items: center; */
+/* } */
+.cajas{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.container .cajas h3{
+    display: flex;
+    text-align: center;
+}
+.imagenes {
+    display: flex;
+    justify-content: center;
+    gap: 15px
+}
+/* .imagenes article{
+    min-height: 200px;
+    flex-basis: calc(30% - 20px);
+} */
+.container .imagenes img{
+    width: 200px;
+    height: auto;
+    object-fit: cover;
 }
 .footer-bottom {
     text-align: center;
