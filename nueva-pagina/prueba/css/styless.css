@@ -1,0 +1,422 @@
+/* css/styles.css */
+
+:root {
+  --dark: #0f2b36;
+  --accent: #2bd29b;
+  --muted: #9fb0bd;
+  --white: #ffffff;
+  /* Colores del Footer */
+  --footer-bg: #1a2b38;
+  --footer-bg-bottom: #162531;
+  --footer-text: #9fb0bd;
+  --footer-title: #ffffff;
+  /* Colores de iconos de Servicios */
+  --icon-blue: #3498db;
+  --icon-teal: #1abc9c;
+  --icon-green: #2ecc71;
+}
+
+* {
+  box-sizing: border-box
+}
+
+body {
+  margin: 0;
+  font-family: Montserrat, system-ui, Arial;
+  color: #223046;
+  background: #fff;
+  line-height: 1.4;
+  padding-top: 65px ;
+}
+
+a {
+  color: inherit;
+  text-decoration: none
+}
+
+/* ======================================== */
+/* SECCIÓN DE HEADER */
+/* ======================================== */
+#imagenprincipal{
+  animation: floatY 2s ease;
+  transition: transform 0.3s ease;
+  object-position: center;
+}
+@keyframes floatY {
+  to{
+    transform: translateY(0);
+  }
+  from{
+    transform: translateY(-10px);
+  }
+}
+
+#imagenprincipal:hover{
+  transform: translateY(-10px) scale(1.05);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  color: var(--white)
+}
+/* Agregue esto para navbar */
+#navSection .nav-link{
+  color: var(--white);
+}
+.navbar img {
+  height: 50px; 
+}
+#navSection .nav-link{
+  color: white;
+  padding: 0 10px;
+ }
+#navSection .nav-link.active{
+  color: #ffc107;
+}
+
+.logo-mark {
+  display: none;
+}
+
+.logo-text {
+  font-family: Playfair Display, serif;
+  color: var(--white);
+  letter-spacing: 1px;
+  font-size: 24px;
+}
+
+/* ======================================== */
+/* SECCIÓN DE HERO */
+/* ======================================== */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(7, 22, 30, .75) 0%, rgba(7, 22, 30, .75) 100%),
+    url('../img/fondo.jpg'); 
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  transform: scale(1.02);
+}
+
+.hero .container {
+  position: relative;
+  z-index: 10;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-family: Playfair Display, serif;
+  font-size: 44px;
+  margin: 6px 0 12px;
+  color: #fff;
+  letter-spacing: 1px
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #012;
+  box-shadow: 0 6px 18px rgba(43, 210, 155, .14)
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, .14);
+  color: #fff
+}
+
+
+/* La tarjeta flotante */
+#home{
+  position: relative;
+}
+#relativa{
+  width: 50%;
+  position: relative;
+  z-index: 10;
+  margin-top: -50px;
+}
+
+/* ======================================== */
+/* SECCIONES DE CONTENIDO */
+/* ======================================== */
+
+section {
+  padding: 80px 0
+}
+.section-title {
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 18px;
+  color: #203041
+}
+
+.section-sub {
+  color: var(--muted);
+  text-align: center;
+  margin-bottom: 30px
+}
+
+/* Recent blog: circle images */
+#actividades img{
+  border-radius: 50%;
+  width: 150px;
+  height: 170px;
+  object-fit: cover;
+}
+
+/* Latest work: mosaic */
+#tamaño article{
+  overflow: hidden;
+  border-radius: 4px;
+}
+#tamaño img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+  object-position: center;
+  min-height: 150px;
+}
+
+#tamaño article:hover img{
+  transform: scale(1.05);
+}
+/* ======================================== */
+/* SECCIÓN ABOUT ROBERT DOE */
+/* ======================================== */
+
+#icono img{
+  width: 75px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+/* ======================================== */
+/* SECCIÓN SERVICES */
+/* ======================================== */
+.services {
+  background: var(--dark);
+  color: #fff;
+  padding: 80px 0;
+  text-align: center;
+}
+
+#color .card{
+  background: var(--dark);
+}
+
+.pagination-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px auto;
+}
+.pagination-dots.top-dots {
+  margin-bottom: 40px;
+}
+.pagination-dots.bottom-dots {
+  margin-top: 40px;
+}
+.pagination-dots .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+}
+.pagination-dots .dot.active {
+  background: var(--accent);
+}
+
+/* ======================================== */
+/* SECCIÓN DE FOOTER */
+/* ======================================== */
+
+#seccion-footer::after{
+  content: "";
+  display: block;
+  width: 300px;
+  height: 2px;
+  margin: 5px 5px;
+  background: var(--accent);
+  transform-origin: left;
+  transform: scaleX(.30);
+}
+
+
+/* ======================================== */
+/* SECCIÓN RESPONSIVE */
+/* ======================================== */
+@media (max-width:768px){
+  #navSection{
+    min-width: auto;
+  }
+}
+
+@media (max-width:992px) {
+  .hero {
+    min-height: 620px;
+    padding-top: 100px;
+    text-align: center;
+  }
+  #imagenprincipal img {
+    justify-content: center;
+    align-items: center;
+  } 
+}
+  /* .hero-left {
+    max-width: 100%;
+  }
+  .hero-cta{
+    justify-content: center;
+  }
+  #tamaño article {
+    grid-template-columns: repeat(2, 1fr)
+  }
+  #tamaño article {
+    grid-column: auto;
+    grid-row: auto;
+    height: 240px
+  }
+  
+  /* .header-right-group {
+    display: none; 
+  } */
+
+  /* About Robert Responsive */
+  /* .about-robert-grid {
+    flex-direction: column-reverse;
+  }
+  .about-robert-left,
+  .about-robert-right {
+    max-width: 100%;
+  }
+  .about-robert-left {
+    text-align: center;
+    padding-right: 0;
+    margin-top: 30px;
+  }
+  .section-title-left {
+    text-align: center;
+  }
+  .contact-actions {
+    justify-content: center;
+  }
+  .team-avatars {
+    justify-content: center;
+  } */
+
+  /* (NUEVO) About Meditating Responsive */
+  /* .about-split-grid { */
+    /* flex-direction: column; Stacks image on top */
+  /* }
+  .about-split-left-img,
+  .about-split-right-text {
+    max-width: 100%;
+  }
+  .about-split-right-text {
+    padding-left: 0;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .about-split-right-text .text-muted {
+    max-width: 100%;
+  }
+  .about-split-right-text .section-title-left {
+    text-align: center;
+  } */
+
+  /* Footer Responsive 992px */
+  /* .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .widget-work {
+    grid-column: span 2;
+  }
+} */
+
+/* @media (max-width: 768px) {
+    .service-grid{
+        flex-direction: column;
+        align-items: center;
+    }
+    .stats-floating{
+        margin-left: 20px;
+        margin-right: 20px;
+        max-width: none;
+    } */
+
+    /* Footer Responsive 768px */
+    /* .footer-grid {
+      grid-template-columns: 1fr;
+    }
+    .widget-work {
+      grid-column: span 1;
+    }
+
+    .bottom-inner {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .back-to-top {
+      order: 3;
+    }
+    .copyright {
+      order: 2;
+    }
+    .footer-nav {
+      order: 1;
+    } */
+
+
+/* @media (max-width:480px) {
+  .logo-text {
+      font-size: 20px;
+  }
+  .hero h1 {
+    font-size: 32px
+  }
+  .hero p.lead {
+    font-size: 14px
+  }
+  .stats-floating {
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px
+  }
+  .stats-col {
+    padding: 18px
+  }
+  section {
+    padding: 48px 0
+  } */
+
+  /* (NUEVO) Testimonials Responsive */
+  /* .testimonial-quote {
+    font-size: 1.2rem;
+  } */
+
+  /* Footer Responsive 480px */
+  /* .work-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .work-gallery img {
+    height: 100px;
+  }
+  .copyright, .footer-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .copyright span {
+    margin-right: 0;
+  }
+} */
+/* } */
