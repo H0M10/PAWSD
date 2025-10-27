@@ -34,28 +34,7 @@ a {
   text-decoration: none
 }
 
-/* ======================================== */
-/* SECCIÓN DE HEADER */
-/* ======================================== */
-
-/* .site-header .topbar {
-  background: transparent;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 60;
-}
-
-.topbar-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 22px 20px;
-  max-width: 1200px;
-  margin: 0 auto
-} */
-
+/* Para la barra de navegación */
 .logo {
   display: flex;
   align-items: center;
@@ -67,12 +46,7 @@ a {
 #navSection .nav-link{
   color: var(--white);
 }
-/* #navSection{
-  background: var(--dark);
-} */
-/* .navbar {
-  min-height: 10px;
-/* } */
+
 .navbar img {
   height: 50px; 
 }
@@ -84,10 +58,8 @@ a {
   color: #ffc107;
 }
 
-.logo-mark {
-  display: none;
-}
 
+/* Para el titulo del navbar */
 .logo-text {
   font-family: Playfair Display, serif;
   color: var(--white);
@@ -95,75 +67,9 @@ a {
   font-size: 24px;
 }
 
-.header-right-group {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
 
-.icon-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 30px;
-  height: 30px;
-  background: transparent;
-  color: rgba(255, 255, 255, 0.9);
-  border-radius: 50%;
-}
-.icon-btn:hover {
-  color: var(--accent);
-}
-.icon-btn svg {
-    width: 18px;
-    height: 18px;
-}
-
-/* .main-nav ul {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  list-style: none;
-  margin: 0;
-  padding: 0
-}
-
-.main-nav a {
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.9);
-  padding: 6px 4px;
-  text-transform: uppercase;
-}
-
-.main-nav a:hover {
-  color: var(--accent)
-}
-
-.main-nav a.active {
-  color: var(--accent);
-} */
-
-.cart-badge {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 18px;
-  height: 18px;
-  margin-left: 6px;
-  background: var(--accent);
-  color: var(--dark);
-  border-radius: 50%;
-  font-size: 11px;
-  font-weight: 700;
-  position: relative;
-  top: -2px; 
-}
-
-
-/* ======================================== */
+/* ===============*/
 /* SECCIÓN DE HERO */
-/* ======================================== */
 
 .hero {
   position: relative;
@@ -901,6 +807,7 @@ section {
   font-weight: 600;
 }
 
+/* Para la barra que aparece en el footer */
 #seccion-footer::after{
   content: "";
   display: block;
@@ -910,23 +817,7 @@ section {
   background: var(--accent);
   transform-origin: left;
   transform: scaleX(.30);
-  /* animation: growLine 900ms ease forwards; */
 }
-
-/* @keyframes growLine {
-  0% {
-    transform: translateX(0.30);
-    height: 0;
-  }
-  50% {
-    transform: translateX(7px);
-    height: 7px;
-  }
-  100% {
-    transform: translateX(10px);
-    height: 10px;
-}
-} */
 
 /* ======================================== */
 /* SECCIÓN RESPONSIVE */
