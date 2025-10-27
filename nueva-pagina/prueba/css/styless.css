@@ -74,7 +74,7 @@ a {
   padding: 0 10px;
  }
 #navSection .nav-link.active{
-  color: #ffc107;
+  color: var(--accent);
 }
 
 .logo-mark {
@@ -271,3 +271,4 @@ section {
     align-items: center;
   } 
 }
+
