@@ -210,8 +210,8 @@ section {
 /* ======================================== */
 
 #icono img{
-  width: 75px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
 }
 
@@ -229,25 +229,22 @@ section {
   background: var(--dark);
 }
 
-.pagination-dots {
+.puntos {
   display: flex;
   justify-content: center;
   gap: 10px;
   margin: 20px auto;
 }
-.pagination-dots.top-dots {
-  margin-bottom: 40px;
-}
-.pagination-dots.bottom-dots {
+.puntos.puntosabajo {
   margin-top: 40px;
 }
-.pagination-dots .dot {
+.puntos .dot {
   width: 8px;
   height: 8px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.2);
 }
-.pagination-dots .dot.active {
+.puntos .dot.active {
   background: var(--accent);
 }
 
