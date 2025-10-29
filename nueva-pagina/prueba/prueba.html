@@ -13,11 +13,11 @@
         overflow-x: hidden;
       }
       /* Hover efecto para imágenes de actividades */
-      .card img#imagen {
+      .card{
         transition: transform 0.3s, box-shadow 0.3s;
       }
-      .card img#imagen:hover {
-        transform: scale(1.08);
+      .card:hover {
+        transform: scale(1.04);
         box-shadow: 0 8px 24px rgba(32, 168, 216, 0.25);
         z-index: 2;
       }
@@ -133,22 +133,22 @@
       <p class="section-sub">Proyectos y experiencias destacadas.</p>
 
       <div id="tamaño" class="row g-3 justify-content-center">
-        <article class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+        <article class="col-12 col-sm-6 col-md-4 col-lg-4 mb-3">
           <img class="img-fluid rounded-3" src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=60" alt="">
         </article>
-        <article class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+        <article class="col-12 col-sm-6 col-md-4 col-lg-4 mb-3">
           <img class="img-fluid rounded-3" src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=60" alt="">
         </article>
-        <article class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+        <article class="col-12 col-sm-6 col-md-4 col-lg-4 mb-3">
           <img class="img-fluid rounded-3" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=60" alt="">
         </article>
-        <article class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+        <article class="col-12 col-sm-6 col-md-4 col-lg-4  mb-3">
           <img class="img-fluid rounded-3" src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=60" alt="">          
         </article>
-        <article class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+        <article class="col-12 col-sm-6 col-md-4 col-lg-4 mb-3">
           <img class="img-fluid rounded-3" src="https://images.unsplash.com/photo-1482192505345-5655af888cc4?auto=format&fit=crop&w=800&q=60" alt="">
         </article>
-        <article class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+        <article class="col-12 col-sm-6 col-md-4 col-lg-4 mb-3">
           <img class="img-fluid rounded-3" src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=60" alt="">
         </article>
       </div>
@@ -261,10 +261,14 @@
   <footer class="site-footer container-fluid py-5 bg-dark text-white">
   <div class="row align-items-center g-4">
     <div class="col-12 col-lg-8 mb-4 mb-lg-0">
-      <div class="d-flex align-items-center mx-3 mx-lg-5">
+      <div class="d-flex align-items-center mx-3 mx-lg-4">
         <img class="mb-3 mx-2" src="img/sin-fondo.png" alt="Logo de Tulum" height="40">
         <h3>Tulum</h3>
       </div>
+      <!-- <div class="d-flex justify-content-between align-items-center mx-3 mx-lg-5 mt-lg-5">
+        <h6 id="seccion-footer" class="mb-0"> Paisajes increíbles</h6>
+        <h6 id="seccion-footer" class="mb-0">Regìstrate</h6>
+      </div> -->
       <h6 id="seccion-footer" class="mx-3 mx-lg-5">Paisajes increíbles</h6>
       <div class="row g-2 py-1 mx-3 mx-lg-5">
         <div class="col-4 col-sm-2 mb-2 mb-sm-0">
@@ -284,10 +288,10 @@
         </div>
       </div>
     </div>
-    <div class="col-12 col-lg-4">
-      <h6 id="seccion-footer">Regístrate</h6>
+    <div class=" col-12 col-lg-3">
+      <h6 id="seccion-footer" class="mt-4 mt-lg-5">Regístrate</h6>
       <p class="fs-6 text-white">Si deseas mayor información ingresa tu correo electrónico.</p>
-      <form class="newsletter-form input-group">
+      <form class="newsletter-form input-group justify-content-center justify-content-lg-start">
         <input type="email" class="form-control form-control-sm" placeholder="Email address">
         <button type="submit" class="btn bg-dark text-success border-0" aria-label="Submit">✓</button>
       </form>

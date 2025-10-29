@@ -164,6 +164,10 @@ section {
 }
 
 /* Recent blog: circle images */
+.card {
+  overflow: hidden;
+  border-radius: 12px; 
+}
 #actividades img{
   border-radius: 50%;
   width: 150px;
@@ -248,6 +252,9 @@ section {
   background: var(--accent);
   transform-origin: left;
   transform: scaleX(.30);
+}
+#seccion-footer{
+ margin-top: 10px;
 }
 
 
