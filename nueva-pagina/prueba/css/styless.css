@@ -130,7 +130,19 @@ a {
   border: 1px solid rgba(255, 255, 255, .14);
   color: #fff
 }
-
+.botondescubre:hover{
+  animation: 
+  fadeUp .7s ease forwards;
+  /* floatY 3.2s ease 1.02s infinite; */
+}
+@keyframes fadeUp {
+  to{
+    transform: translateY(-7px);
+  }
+  from{
+    transform: translateY(0px);
+  }
+}
 
 /* La tarjeta flotante */
 #home{
@@ -252,6 +264,9 @@ section {
   background: var(--accent);
   transform-origin: left;
   transform: scaleX(.30);
+}
+#verem::placeholder{
+  color: rgba(97, 211, 206, 0.804);
 }
 #seccion-footer{
  margin-top: 10px;
